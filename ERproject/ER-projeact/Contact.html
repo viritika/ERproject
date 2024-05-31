@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="Contact.CSS">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div><img src="./backgroundImg.jpg" alt="" height="90px" width="90px" class="nav-logo"></div>
+
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="demo">
+
+                    <li><a href="./AboutUs.html">Home</a> </li>
+                    <li> <a href="./AboutUs.html">About</a></li>
+                    <li><a href="./OurServices.html">OurServices</a></li>
+                    <li><a href="#Contact">ContactUs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+  <div class="mainContact">
+    <div class="heading"><b>Contact Us</b></div>
+    <div class="main" id="Contact">
+        <div class="img"><img src="./contact.jpg" alt="" height="800px" width="800px" class="mainImg"></div>
+
+        <p class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsum deserunt mollitia
+            tenetur ullam. Aspernatur sunt doloribus nam perferendis velit explicabo, quis expedita molestias et dolore
+            minima hic error nobis corrupti cupiditate beatae! Iure modi, fugiat itaque eius enim magnam! Quasi ipsum
+            distinctio quos fuga sapiente dolor exercitationem a quisquam at! Nihil, nisi optio enim nulla quis nam
+            debitis.
+            <br>
+            <button class="contactbtn"><a href="./sendMsg.html" class="btn">Contact</a></button>
+        </p>
+    </div>
+  </div>
+</body>
+<script>
+    const checkbox = document.querySelector('.checkbox');
+    const ul = document.querySelector('ul');
+
+    checkbox.addEventListener('click', () => {
+        ul.classList.toggle('active');
+    });
+
+
+</script>
+
+<!-- <script>
+    function myfunction(){
+        document.getElementById("demo").innerHTML = "<ol><li></li></ol>";
+    }
+</script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>

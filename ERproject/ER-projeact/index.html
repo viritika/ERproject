@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            top: 0;
+        }
+
+        ul {
+            display: flex;
+            gap: 50%;
+            align-items: center;
+        }
+
+        li,
+        a {
+            text-decoration: none;
+            list-style: none;
+            font-size: 20px;
+            color: #FF0000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .nav-list {
+            padding-right: 30%;
+            align-items: center;
+            margin-left: 20%;
+        }
+
+        .nav-logo {
+            padding: 5%;
+        }
+
+        button,
+        .logbtn,
+        .log {
+
+            font-size: 20px;
+            margin: auto;
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: steelblue;
+            border: none;
+            border-radius: 10px;
+            display: block;
+
+
+        }
+
+        .main {
+            display: flex;
+            background-color: #e1e69e42;
+            background-image: linear-gradient(1deg, #e1e69e42, #FFFFFF);
+            margin-top: 140px;
+            padding: 3%;
+        }
+
+        .Side-A {
+            text-align: center;
+            width: 30%;
+            padding: 3%;
+            margin-right: 10%;
+            margin-left: 10%;
+
+        }
+
+        p {
+            line-height: 25px;
+        }
+
+
+        header {
+            font-weight: bold;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .Startedbtn,
+        .Started {
+            border: none;
+            padding: 3px;
+            color: #000000;
+            background-color: #BEC19A;
+        }
+
+        @media screen and (max-width: 900px) {
+
+
+            .navbar {
+                padding: 10PX;
+                display: flex;
+                padding: 0%;
+            }
+
+
+            ul,
+            a {
+                width: 50%;
+                gap: 5PX;
+                /* padding: 10px; */
+                z-index: 1;
+                display: grid;
+                color: white;
+                background-color: rgba(128, 128, 128, 0.719);
+                text-decoration: none;
+            }
+
+
+            .navbar-toggler-icon {
+                margin-left: 1px;
+            }
+
+            li {
+                background-color: rgba(128, 128, 128, 0.719);
+
+            }
+
+            .container-fluid {
+                width: 10%;
+                margin-left: 20px;
+            }
+
+
+
+            .main {
+                align-items: center;
+                display: grid;
+            }
+
+            .Side-A {
+                width: 90%;
+                margin-left: 10px;
+                padding: 5px;
+            }
+
+            .Side-B-img {
+                height: 300px;
+                width: 300px;
+            }
+
+            body {
+                padding: 0%
+            }
+
+            .checkbox {
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div><img src="./backgroundImg.jpg" alt="" height="90px" width="90px" class="nav-logo"></div>
+
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="demo">
+
+                    <li><a href="./AboutUs.html">Home</a> </li>
+                    <li> <a href="./AboutUs.html">About</a></li>
+                    <li><a href="./OurServices.html">OurServices</a></li>
+                    <li><a href="./Contact.html">ContactUs</a></li>
+                </ul>
+            </div>
+        </div>
+        <button class="logbtn"><a href="./CreateAccount.html" class="log">Login</a></button>
+    </nav>
+
+
+
+    <div class="main">
+        <div class="Side-A">
+
+            <header>
+                The <br>Endeavouring Raptor.
+            </header>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit commodi quod alias recusandae quaerat
+                corporis nobis, officia tempore natus, accusamus qui similique veritatis error eaque. Velit voluptatem
+                reprehenderit pariatur alias dicta delectus nulla officia ipsum, quasi sunt ullam minus. Suscipit
+                nostrum
+                laborum ad. Expedita, consectetur enim cupiditate corporis natus nihil.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea qui fugiat facilis vero non dolor. Esse
+                quos provident suscipit et!</p>
+            <button class="Startedbtn"><a href="./CreateAccount.html" class="Started">Get Started </a></button>
+        </div>
+
+        <div class="Side-B">
+            <img src="./backgroundImg-removebg-preview.png" alt="" class="Side-B-img" height="700px" width="700px">
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+
+<script>
+    const btn = document.querySelector('.btn');
+    const ul = document.querySelector('ul');
+
+    btn.addEventListener('click', () => {
+        ul.classList.toggle('active');
+    });
+</script>
+
+
+</html>
